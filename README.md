@@ -1,2 +1,2 @@
-# TKTools
-.net core tools for personal use. 
+# TKSharpTool
+Personal tools created by .net core.
