@@ -2,6 +2,7 @@ namespace TKCliTool;
 
 public class Help
 {
+    
     public static void printHelp()
     {
         Console.WriteLine("Usage: TKCliTool <command> [options]");
