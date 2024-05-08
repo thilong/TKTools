@@ -5,6 +5,10 @@
 
 **.DS_Store
 **.tk.webdav**
+.idea/**
+.vscode/solution-explorer**
+**/bin/**
+**/obj/**
 
 # User-specific files
 *.rsuser
