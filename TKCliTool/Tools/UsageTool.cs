@@ -28,7 +28,14 @@ public class UsageTool : ToolBase
 
     public override void Run(string[] args)
     {
-        this.printHelp();
+        var type = Assembly.GetExecutingAssembly().GetTypes()
+            .Where(t => t.GetCustomAttribute<ToolAttribute>()?.Name == args[0])
+            .FirstOrDefault();
+        var tool = (ToolBase)Activator.CreateInstance(type);
+        if(tool != null)
+            tool.printHelp();
+        else
+            Console.WriteLine("Error: Failed to run tool: {args[0]}\n");
     }
 }
 

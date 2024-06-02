@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
+            "name": "TKCliTool",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/TKCliTool/bin/Debug/net6.0/TKCliTool.dll",
-            "args": ["time"],
+            "args": ["help","time"],
             "cwd": "${workspaceFolder}/TKCliTool",
             "console": "internalConsole",
             "stopAtEntry": false

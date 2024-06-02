@@ -21,6 +21,8 @@ if(type == null){
 }else{
     var tool = (ToolBase)Activator.CreateInstance(type);
     if(tool == null){
+        Console.WriteLine("Error: Tool not found\n");
+
         new UsageTool().Run(args);
         return;
     }
